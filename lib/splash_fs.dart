@@ -20,7 +20,6 @@ class _SplashState extends State<Splash> {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          // colors: [Colors.lightGreen.shade100, Colors.lightGreen.shade700],
           colors: [Colors.lightGreen.shade400, Colors.grey.shade900],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
@@ -55,7 +54,7 @@ class _SplashState extends State<Splash> {
 
   Future<void> navigateToLogin() async {
     Future.delayed(
-      const Duration(seconds: 5), () {
+      const Duration(seconds: 8), () {
         Navigator.pushReplacement(context, MaterialPageRoute(
           builder: (context) => const MyHomePage(title: 'aspg',)));
       }
