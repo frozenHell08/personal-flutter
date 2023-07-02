@@ -105,6 +105,9 @@ flutter:
         - asset: assets/fonts/Moon Flower.ttf
         - asset: assets/fonts/Moon Flower Bold.ttf
           weight: 700
+    - family: NellaSue
+      fonts:
+        - asset: assets/fonts/NellaSue.ttf
   # fonts:
   #  - family: Schyler
   #     fonts:
