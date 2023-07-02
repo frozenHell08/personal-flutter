@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:personal/main.dart';
+import 'package:personal/pages/login.dart';
+
+import 'components/mymethods.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -19,11 +22,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Colors.lightGreen.shade400, Colors.grey.shade900],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        ),
+        gradient: darkGreenGradient(),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -56,7 +55,8 @@ class _SplashState extends State<Splash> {
     Future.delayed(
       const Duration(seconds: 8), () {
         Navigator.pushReplacement(context, MaterialPageRoute(
-          builder: (context) => const MyHomePage(title: 'aspg',)));
+          // builder: (context) => const MyHomePage(title: 'aspg',)));
+          builder: (context) => Login()));
       }
     );
   }
